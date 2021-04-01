@@ -1,0 +1,21 @@
+.navbar-toggler-icon-update{
+    height: 37px !important;
+    background-size: auto !important;
+    // background-image: ;
+}
+
+.container-navbar{
+    background-color: #730FFF;
+    border: 2px solid black;
+    // justify-content: start !important;
+    display: grid !important;
+    grid-template-columns: calc(192px - (1rem + 2px)) 1fr auto;
+}
+
+.container-navigation{
+    display: grid !important;
+    grid-auto-flow: column;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 0;
+}
