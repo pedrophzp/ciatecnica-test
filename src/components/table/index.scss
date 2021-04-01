@@ -1,3 +1,5 @@
+@import "../../styles/colors.scss";
+
 .container-table {
   display: flex;
   flex-direction: column;
@@ -9,7 +11,7 @@
 table {
   margin-top: 1rem;
   & thead {
-    background: #cccccc;
+    background: $gray-color;
     & th {
       border: none !important;
       padding: 1rem 0.5rem !important;
@@ -20,19 +22,19 @@ table {
     border-top: none !important;
   }
   & tbody tr:nth-child(odd) {
-    background: #e5e5e5;
+    background: $light-gray-color;
   }
 }
 
 .page-item.active .page-link{
-    background-color: #730FFF !important;
-    color: #FFFFFF !important;
+    background-color: $primary-color !important;
+    color: $white-color !important;
 }
 
 .page-link{
-    color: #730FFF !important;
+    color: $primary-color !important;
 }
 
 .page-item.disabled .page-link{
-    color: #8a93a2 !important;
+    color: $dark-gray-color !important;
 }

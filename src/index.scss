@@ -1,4 +1,5 @@
 @import "~@coreui/coreui/scss/coreui";
+@import "./styles/colors.scss";
 
 body {
   margin: 0;
@@ -17,27 +18,27 @@ b {
 
 .dropdown {
   & button:first-child {
-    border-left: 2px solid black;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-left: 2px solid $black-color;
+    border-top: 2px solid $black-color;
+    border-bottom: 2px solid $black-color;
     width: 100px;
   }
 }
 
 .dropdown-toggle,
 input {
-  border: 2px solid black !important;
-  color: black !important;
+  border: 2px solid $black-color !important;
+  color: $black-color !important;
 }
 
 .help-password {
-  color: red !important;
+  color: $red-color !important;
 }
 
 .dropdown-menu.show {
   min-width: 100% !important;
   border-radius: unset !important;
-  border: 2px solid black; 
+  border: 2px solid $black-color;
   transform: translate3d(0, 35px, 0px) !important;
 }
 
@@ -50,14 +51,18 @@ input {
   border-top-right-radius: 5px;
   position: relative;
   position: relative;
-  border: 2px solid black;
-  border-bottom: 1px solid black !important;
+  border: 2px solid $black-color;
+  border-bottom: 1px solid $black-color !important;
   border-right: none;
   border-radius: unset;
-  background-color: #c6c6c6;
+  background-color: $gray-color;
   border-right: none;
-  color: black;
+  color: $black-color;
   z-index: 1;
+  &:hover {
+    border: 2px solid $black-color;
+    border-bottom: 1px solid $black-color !important;
+  }
   &:after {
     content: " ";
     position: absolute;
@@ -67,28 +72,26 @@ input {
     top: -2px;
     left: 2px;
     z-index: -1;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
+    border-right: 2px solid $black-color;
+    border-bottom: 2px solid $black-color;
+    border-top: 2px solid $black-color;
     border-top-right-radius: 4px;
-    background-color: #c6c6c6;
+    background-color: $gray-color;
     transform-origin: top left;
     -ms-transform: skew(15deg, 0deg);
     -webkit-transform: skew(15deg, 0deg);
     transform: skew(15deg, 0deg);
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $black-color;
   }
   &.active {
-    border: 2px solid black !important;
-    border-bottom: 1px solid black !important;
+    border: 2px solid $black-color !important;
+    border-bottom: 1px solid $black-color !important;
     border-right: none !important;
-    background-color: #EBEDEF;
-    color: black;
+    background-color: $light-gray-color;
+    color: $black-color;
     z-index: 2;
     &:after {
-      background-color: #EBEDEF;
-      // border-right: 2px solid black;
-      // z-index: 2;
+      background-color: $light-gray-color;
     }
   }
 }

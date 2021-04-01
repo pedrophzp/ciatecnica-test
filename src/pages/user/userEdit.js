@@ -238,7 +238,7 @@ const Table = (props) => {
                         Password
                       </CLabel>
                       <CInput
-                        style={{ width: "80%" }}
+                        style={{ width: "80%", backgroundColor:"#e5e5e5" }}
                         type="password"
                         id="password"
                         name="password"
@@ -263,7 +263,7 @@ const Table = (props) => {
                         Confirm Password
                       </CLabel>
                       <CInput
-                        style={{ width: "80%" }}
+                        style={{ width: "80%",backgroundColor:"#e5e5e5" }}
                         type="password"
                         id="confirmPassword"
                         name="confirmPassword"
